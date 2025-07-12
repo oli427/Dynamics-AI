@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+.auth-body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #214295, #0B152F);
+    flex-direction: column;
+}
+.auth-box{
+    background-color: rgba(255,255,255, 0.2);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 12px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40rem;
+    height: 25rem;
+}
+h1{
+    font-size: 4rem;
+    background: linear-gradient(90deg,#FFEE00, #970586,#FFEE0B );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+.auth-box input{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 20rem;
+}
+.auth-box label{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.auth-box button{
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    height: 40px;
+    width: 30rem;
+    align-self: center;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.loginLink{
+    color: aqua;
+    cursor: pointer;
+}
+.auth-box button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .auth-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .auth-box input {
+        width: 100%;
+        max-width: 18rem;
+    }
+    .auth-box button {
+        width: 100%;
+        max-width: 20rem;
+    }
+    .auth-box label {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-box {
+        padding: 15px;
+        margin: 15px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .auth-box input {
+        height: 35px;
+        font-size: 14px;
+    }
+    .auth-box button {
+        height: 35px;
+        font-size: 14px;
+    }
+    .auth-box label {
+        font-size: 14px;
+    }
+}
